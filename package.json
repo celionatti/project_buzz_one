@@ -1,0 +1,24 @@
+{
+  "name": "design_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "tailwind:dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build-js": "npx esbuild src/script.js --outfile=dist/script.js --bundle --watch",
+    "main-js": "npx esbuild src/main.js --outfile=dist/main.js --bundle --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.4",
+    "esbuild": "^0.15.10",
+    "swiper": "^8.4.3"
+  }
+}
